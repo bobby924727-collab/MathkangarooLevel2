@@ -1,0 +1,23 @@
+{
+  "year": 2010,
+  "title": "Känguru der Mathematik 2010",
+  "subtitle": "Level: Écolier — Grade 3 + 4",
+  "timeMinutes": 60,
+  "startingPoints": 24,
+  "wrongPenaltyFraction": 0.25,
+  "tiers": [
+    { "from": 1, "to": 8, "points": 3 },
+    { "from": 9, "to": 16, "points": 4 },
+    { "from": 17, "to": 24, "points": 5 }
+  ],
+  "answerKey": {
+    "1": "E", "2": "C", "3": "D", "4": "A", "5": "B", "6": "C", "7": "B", "8": "C",
+    "9": "B", "10": "C", "11": "B", "12": "A", "13": "C", "14": "E", "15": "C", "16": "C",
+    "17": "A", "18": "D", "19": "C", "20": "C", "21": "A", "22": "D", "23": "D", "24": "B"
+  },
+  "pages": [
+    { "image": "assets/2010/page1.png", "questions": [1, 2, 3, 4, 5, 6, 7] },
+    { "image": "assets/2010/page2.png", "questions": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17] },
+    { "image": "assets/2010/page3.png", "questions": [18, 19, 20, 21, 22, 23, 24] }
+  ]
+}

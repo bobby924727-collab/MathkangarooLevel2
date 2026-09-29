@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Kangaroo Practice Test</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1 id="year-title">Loading test…</h1>
+  <p id="year-subtitle"></p>
+</header>
+
+<div class="progress-bar">
+  <a class="back-link" href="index.html">&larr; Back to years</a>
+  <span class="count" id="progress-count">0 / 24 answered</span>
+  <div>
+    <button class="secondary" id="reset-btn">Reset</button>
+    <button class="primary" id="submit-btn">Check my answers</button>
+  </div>
+</div>
+
+<main>
+  <div class="rules">
+    Real Känguru scoring: you start with <strong>24 points</strong>. Questions 1–8 are worth
+    3 points each, 9–16 are worth 4 points each, and 17–24 are worth 5 points each.
+    An unanswered question scores 0. A wrong answer costs a quarter of that question's points.
+  </div>
+
+  <div id="results">
+    <h2>Your Score</h2>
+    <div class="score-big"><span id="score-value">0</span> / 100</div>
+    <div class="score-breakdown">
+      <span>✅ Correct: <strong id="score-correct">0</strong></span>
+      <span>❌ Incorrect: <strong id="score-incorrect">0</strong></span>
+      <span>⬜ Blank: <strong id="score-blank">0</strong></span>
+    </div>
+  </div>
+
+  <div id="quiz-root"></div>
+</main>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

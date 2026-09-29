@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Kangaroo Practice Tests</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <h1>🦘 Math Kangaroo Practice</h1>
+  <p>Level Écolier (Grade 3 &amp; 4) — pick a year and test yourself!</p>
+</header>
+<main>
+  <div class="intro">
+    <p>Each test has 24 multiple-choice questions, just like the real Känguru der Mathematik
+    competition. Click a letter to answer, then press <strong>Check my answers</strong> at the
+    end to see your score.</p>
+  </div>
+
+  <div class="year-grid" id="year-grid"></div>
+</main>
+
+<script src="data/years.js"></script>
+<script>
+  const grid = document.getElementById("year-grid");
+  YEARS_AVAILABLE.slice().sort((a, b) => b.year - a.year).forEach((entry) => {
+    const el = document.createElement(entry.ready ? "a" : "div");
+    el.className = "year-card " + (entry.ready ? "ready" : "soon");
+    if (entry.ready) el.href = `quiz.html?year=${entry.year}`;
+    el.innerHTML = entry.year + (entry.ready ? "" : '<span class="badge">Coming soon</span>');
+    grid.appendChild(el);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[theme]
+base = "light"
+primaryColor = "#FF8C42"
+backgroundColor = "#FFF9EE"
+secondaryBackgroundColor = "#FFF1D6"
+textColor = "#2C2C54"
+borderColor = "#E4DDC9"
+greenColor = "#2ecc71"
+redColor = "#e74c3c"
+baseRadius = "large"
+buttonRadius = "full"
+baseFontSize = 18
+baseFontWeight = 500
+font = "Nunito:https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+headingFont = "Baloo 2:https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&display=swap"
+showWidgetBorder = true
